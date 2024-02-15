@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body{
+            height: 100vh;
+            background: url("image/about.jpg") no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            padding: 0 10%;
+          }
+          .home-sci{
+            position: absolute;
+            top: 20px;
+            left: 20px;/*adjust the arrow button */
+        }
+      .home-sci a{
+         width: 40px;
+         height: 40px;
+         border: 2px solid black;
+         border-radius: 50%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         text-decoration: none;
+         color: white;
+         background: black;
+        }
+        .para{
+            max-width: 600px;
+            padding: 20px;
+            background-color: transparent;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .resume{
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: grey;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+        .para a{
+            color: black;
+            font-weight: 600;
+            font-size: 20px;
+        }
+        .resume:hover{
+            background-color:  #2d4f74;
+        }
+        .para p{
+             font-size: 30px;
+             color: white;
+        }
+        .para h2{
+            font-size: 60px;
+            color: white;
+        }
+        .para h2:hover{
+            color: black;
+        }
+        .social-icons{
+            margin-top: 20px;
+        }
+        .social-icons a{
+            height: 40px;
+            width: 40px;
+            margin: 0 10px;
+            color: #fff;
+            background-color: #007bff;
+            border-radius: 50%;
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            line-height: 40px;
+        }
+        .social-icons a:hover{
+            background-color:  grey;
+        }
+        span{
+            font-weight: 900;
+            color: black;
+            text-shadow: white;
+        }
+       span:hover{
+        color: gray;
+       }
+    </style>
+</head>
+<body>
+    <div class="home-sci">
+        <a href="Index.html"><i class='bx bx-arrow-back'></i></a>
+    </div>
+    <div class="para">
+       <h2>Self Introduction</h2>
+       <p>
+         I have Completed My <span>Master's Degree in Computer Application</span> in Swami Ramanand Teerth Marathwada University Nanded. I have also completed my <span>Full Stack Java Developer</span> course from FirstBit Solution's Institute, Pune.
+       </p>
+       <a href="https://sugareprii.github.io/SugarePriyankaResume/" target="_blank" class="resume">Resume</a>
+       <div class="social-icons">
+        <a href="https://www.linkedin.com/in/priyanka-sugare-556833256." target="_blank"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://github.com/SugarePrii" target="_blank"><i class='bx bxl-github' ></i></a>
+       </div>
+    </div>
+</body>
+</html>
