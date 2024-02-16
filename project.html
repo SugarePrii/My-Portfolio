@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body{
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        .background-image {
+            background: url("image/project.jpg") no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        .content {
+            padding: 100px 10%;
+            padding-top: 150px; /* Adjust as per your design */
+            overflow-y: auto;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+        .home-sci{
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1;
+        }
+        .home-sci a{
+         width: 40px;
+         height: 40px;
+         border: 2px solid black;
+         border-radius: 50%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         text-decoration: none;
+         color: white;
+         background: black;
+        }
+        .gallary{
+            margin: 10px;
+            width: 75%;
+            height: 200px;
+            display: flex;
+            gap: 2px;
+        }
+        .gallary img{
+            width: 10%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 2px solid black;
+            transition: all ease 0.3s;
+            cursor: pointer;
+        }
+        .gallary img:hover{
+            width: 100%;
+        }
+
+        .head{
+            text-align: center;
+            padding: 10px 60px;
+            font-size: 30px;
+            color: white;
+            position: fixed;
+            top: 40px;
+            left: 40px;
+            background-color: grey;
+            width: 300px;
+            height: 30px;
+            border-radius: 15px;
+        }
+        .project-itmes {
+            position: relative;
+            max-width: 400px;
+            margin-bottom: 40px;
+            background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+            transition: transform 0.5s ease;
+        }
+
+        .project-itmes:hover{
+            transform: translateX(-70px);
+        }
+
+        .project-itmes h3 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: white; /* Adjust the color as needed */
+        }
+
+        .head-box h4 {
+            text-align: center;
+            font-size: 18px; /* Adjust the font size as needed */
+            margin-bottom: 20px;
+            color: white; /* Adjust the color as needed */
+        }   
+
+        .para {
+            width: 100%;
+            margin: 0 auto; /* Center the paragraph */
+        }
+
+        .para p {
+            color: white;
+            font-size: 16px;
+            font-weight: 400; /* Adjust the font weight as needed */
+            line-height: 1.6; /* Adjust the line height as needed */
+            border: 2px solid transparent;
+            border-radius: 10px;
+            padding: 10px;
+            transition: color 0.3s;
+        }
+
+        .para p:hover {
+            color: #081b29;
+            background-color: gray;
+        }
+
+        .para p:hover::before {
+            width: 100%;
+        }
+
+        .project video{
+            height: 250px;
+            width: 400px;
+        }
+
+        /* Media queries for tablet */
+@media only screen and (max-width: 768px) {
+    .content {
+        padding: 100px 5%;
+        padding-top: 200px; /* Adjust as per your design */
+    }
+
+    .gallary img {
+        width: 20%; /* Adjust image width for smaller screens */
+    }
+
+    .head {
+        padding: 10px 30px;
+        font-size: 20px;
+        width: 200px;
+        height: 20px;
+    }
+
+    .project video {
+        max-width: 100%; /* Ensure video is responsive */
+        height: auto; /* Ensure video maintains aspect ratio */
+    }
+}
+
+/* Media queries for mobile */
+@media only screen and (max-width: 480px) {
+    .content {
+        padding: 80px 5%; /* Adjust padding for smaller screens */
+        padding-top: 180px; /* Adjust as per your design */
+    }
+
+    .gallary {
+        width: 90%; /* Adjust gallery width for smaller screens */
+    }
+
+    .gallary img {
+        width: 30%; /* Adjust image width for smaller screens */
+    }
+
+    .head {
+        padding: 10px;
+        font-size: 18px;
+        width: 150px;
+        height: 15px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="home-sci">
+        <a href="index.html"><i class='bx bx-arrow-back'></i></a>
+    </div>
+    <div class="content">
+        <section class="portfolio">
+            <h2 class="head">My Projects</h2>
+            <div class="project-itmes">
+                <h3>Project 1</h3>
+                <div class="head-box">
+                    <h4>Online Notice Bord System</h4>
+                </div>
+                <div class="gallary">
+                    <img src="images/img1.png" alt="image">
+                    <img src="images/img2.png" alt="image">
+                    <img src="images/img3.png" alt="image">
+                    <img src="images/img4.png" alt="image">
+                    <img src="images/img5.png" alt="image">
+                    <img src="images/img6.png" alt="image">
+                    <img src="images/img7.png" alt="image">
+                    <img src="images/img8.png" alt="image">
+                    <img src="images/img9.png" alt="image">
+                    <img src="images/img10.png" alt="image">
+                    <img src="images/img11.png" alt="image">
+                </div>
+                <div class="para">
+                    <p>
+                        Create a user-friendly notice management system project using HTML, CSS and JavaScript for the front end. Users register, enter their download notices. Admins, Upon login, again access to functions like adding, updating, and deleting notices. The backend powered by PHP and MySQL, manages user authentication, stores notice data, and ensures seamless communication between the front end and database for an efficient and organized notice board system.
+                    </p>
+                </div>
+            </div>
+            <div class="project-itmes">
+                <h3>Project 2</h3>
+                <div class="head-box">
+                    <h4>Player Management System</h4>
+                </div>
+            <div class="project">
+                <video src="image/project2.mp4" controls></video>
+            </div>
+            <div class="para">
+                <p>
+                    A Player Management System is required to efficiently organize and manage information about cricket players. The system should support various operations, including adding, removing, searching, updating, displaying all player records, and showcasing the top 3 players based on runs and wickets. The system should handle player attributes, including Jersey Number, Name, Runs, Wickets, and Matches played.
+                </p>
+            </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
